@@ -4,7 +4,7 @@ import time
 
 
 def pytest_addoption(parser):
-    parser.addoption("--browser", action="store", default="firefox", help="browser firefox,chrome")
+    parser.addoption("--browser", action="store", default="chrome", help="browser firefox,chrome")
 
 
 @pytest.fixture(scope="class")

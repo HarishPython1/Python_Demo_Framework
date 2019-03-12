@@ -29,7 +29,7 @@ class TestLogin:
             home = HomePage(driver)
             home.clik_on_logout_link()
             x = driver.title
-            assert x == "actiTIME - Logi"
+            assert x == "actiTIME - Login"
         except AssertionError as error:
             print(error)
             cur_time=moment.now().strftime("%d-%m-%Y_%H-%M-%S")
